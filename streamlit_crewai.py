@@ -2,6 +2,9 @@ from crewai import  Agent,Task,Crew,Process
 from langchain_core.callbacks import BaseCallbackHandler
 from typing import TYPE_CHECKING,Any,Dict, Optional
 import streamlit as st
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 from langchain_community.llms import Ollama
 #this is how to run stream lit app with crewai streamlit run main.py
