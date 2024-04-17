@@ -3,3 +3,5 @@ langchain-core
 typing
 streamlit
 langchain-community
+embedchain
+chromadb
